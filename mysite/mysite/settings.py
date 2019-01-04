@@ -25,12 +25,13 @@ SECRET_KEY = 'c&$b8yuz*fkjc#9ync01!^#suuuxa(kfrm@+tmbyt)c_=nps_)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['138.197.193.143', 'www.investorscenario.com', 'investorscenario.com', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'realapp.apps.RealappConfig',
     'myapp.apps.MyappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -119,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'myproject/static/')
+# wait for server nginx configure path
+
